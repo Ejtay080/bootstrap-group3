@@ -8,6 +8,10 @@
             .border-1{
                 border-width: 1rem !important;
             }
+            @font-face {
+            font-family: "Mank";
+            src: url("fonts/MankSans.ttf") format("truetype");
+          }
         </style>
         <title>About Us Page</title>
     </head>
@@ -26,56 +30,45 @@
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="aboutus.html" class="nav-item nav-link active">About Us</a>
                         <a href="payment.html" class="nav-item nav-link">Licenses</a>
-                        <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>
+                        <a href="paying.html" class="nav-item nav-link">Payment</a>
                     </div>
                     <div class="navbar-nav ml-auto">
                         <a href="login.html" class="nav-item nav-link">Login</a>
+                        <a href="signup.html" class="nav-item nav-link">Sign up</a>
                     </div>
                 </div>
             </nav>
-            <div class="container-fluid">
+            <div class="container-fluid" style="overflow: auto;">
                 <div class="row justify-content-around bg-success border-bottom border-dark border-1 text-center">
-                    <div class="col-4 bg-success">
-                        <h1>About us</h1>
+                    <div class="col-md-4 bg-success">
+                        <h1 style="font-family: 'Mank';">About Us</h1>
                         <br>
-                        <p>The GDE Engine is a game designer engine specifically for 2D games. The tools it provides were made to be highly user friendly and can be personalized to the user's preference. Other reasons to download and use EDE can be found below</p>
+                        <p>The EDE Engine is a game designer engine specifically used for 2D games. The tools it provides were made to be highly user friendly and can be personalized to the user's preference. Other reasons to download and use EDE can be found below</p>
                     </div>
                 </div>
                 <div class="row justify-content-around bg-dark text-center">
-                    <div class="col-3 bg-success">
-                        <h1>Easy to Use for Everyone</h1>
+                    <div class="col-md-3 bg-success">
+                        <h1 style="font-family: 'Mank';">Easy to Use for Everyone</h1>
                         <br>
-                        <p>GDE's has its own built-in code-editor that is highly user-friendly and easy to use. With it, the user can create files, edit code, and store all their information and files in one place.</p>
+                        <p>EDE's has its own built-in code-editor that is highly user-friendly and easy to use. With it, the user can create files, edit code, and store all their information and files in one place.</p>
+                        <img class="img-fluid" src="images/code2.png">
                     </div>  
-                    <div class="col-3 bg-success">
-                        <h1>Create sprites and Animations</h1>
+                    <div class="col-md-3 bg-success">
+                        <h1 style="font-family: 'Mank';">Create Sprites and Animations</h1>
                         <br>
-                        <p>GDE also has tools for making sprites, spritesheets, and animations. If the user has their own files regarding sprites and animations, they can be uploaded and stored into GDE.</p>
+                        <p>EDE also has tools for making sprites, spritesheets, and animations. If the user has their own files regarding sprites and animations, they can be uploaded and stored into EDE.</p>
+                        <img class="img-fluid" src="images/animation.gif" >
                     </div>       
-                    <div class="col-3 bg-success">
-                        <h1>Documentation made Easy</h1>
+                    <div class="col-md-3 bg-success">
+                        <h1 style="font-family: 'Mank';">Documentation Made Easy</h1>
                         <br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quam qui quo repellat tenetur quod culpa, non delectus quisquam, impedit accusamus odit earum error magnam perspiciatis, ut dolor possimus expedita!</p>
+                        <p>Any changes to a project will be documented by EDE. This is to help teams or solo developers keep track of changes made and will show who made the change and when the change was made.</p>
+                        <img class="img-fluid" src="images/document.gif">
                     </div>          
                 </div>
-                <div class="row justify-content-around bg-dark text-center">
-                    <div class="col-3 bg-success">
-                    <img class="img-fluid" src="images/code2.png">
-                    </div>  
-                    <div class="col-3 bg-success">
-                    <img class="img-fluid" src="images/animation.gif" >
-                    </div>  
-                    <div class="col-3 bg-success">
-                        <img class="img-fluid" src="images/document.gif">
-                    </div>       
             </div>
         </div>
 
-
-
-
-
-        
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
