@@ -35,6 +35,23 @@
         </style>
     </head>
     <body>
+      <script>
+            var confirmWindow;
+   
+   function createEventListener() {
+       var submitButton = document.getElementById("submit");
+       if (submitButton.addEventListener) {
+           submitButton.addEventListener("submit", processInput, false);
+       }
+       else if(submitButton.attachEvent){
+             submitButton.attachEvent("onsubmit", processInput);
+       }
+
+}
+function processInput(){
+         confirmWindow = window.onload("paying.html");
+     }
+      </script>
         <div class="bs-example">
             <nav class="navbar navbar-expand-md navbar-light bg-light">
                 <a href="#" class="navbar-brand">
@@ -71,7 +88,7 @@
                 <div class="card-body">
                   <h5 class="card-title text-center">Basic License</h5>
                   <p class="card-text">This is the basic license of the EDE Engine, giving you full access to save and export solo projects only.</p>
-                  <a href="paying.html" class="btn btn-primary text-center">$99.99</a>
+                  <a href="paying.html" class="btn btn-primary text-center" id="submit">$99.99</a>
                 </div>
               </div>
             </div>
@@ -81,7 +98,7 @@
                 <div class="card-body">
                   <h5 class="card-title text-center">Premium License</h5>
                   <p class="card-text">Not only does this give you access to the basic license, it gives you full access to developer tools, and collaboration. Includes Source Control supported with GitHub/GitBash.</p>
-                  <a href="paying.html" class="btn btn-primary text-center">$149.99</a>
+                  <a href="paying.html" class="btn btn-primary text-center" id="submit">$149.99</a>
                 </div>
               </div>
             </div>
@@ -91,13 +108,14 @@
                   <div class="card-body">
                     <h5 class="card-title text-center">Premium+ License</h5>
                     <p class="card-text">This license gives you full development power to go all across the board. Desktop, Xbox, Playstation, and Mobile development are fully built-in to this license allowing you for full multi-platform development.</p>
-                    <a href="paying.html" class="btn btn-primary text-center">$199.99</a>
+                    <a href="paying.html" class="btn btn-primary text-center" id="submit">$199.99</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

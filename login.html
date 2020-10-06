@@ -33,6 +33,23 @@
         </style>
     </head>
     <body>
+        <script>
+            var confirmWindow;
+   
+        function createEventListener() {
+            var submitButton = document.getElementById("submit");
+            if (submitButton.addEventListener) {
+                submitButton.addEventListener("submit", processInput, false);
+            }
+            else if(submitButton.attachEvent){
+                  submitButton.attachEvent("onsubmit", processInput);
+            }
+    
+    }
+    function processInput(){
+              confirmWindow = window.onload("confirmationl.html");
+          }
+          </script>
         <div class="bs-example">
             <nav class="navbar navbar-expand-md navbar-light bg-light">
                 <a href="#" class="navbar-brand">
@@ -51,7 +68,7 @@
                     </div>
                     <div class="navbar-nav ml-auto">
                         <a href="login.html" class="nav-item nav-link active">Login</a>
-                        <a href="signup.html" class="nav-item nav-link">Sign up</a>
+                        <a href="signup.html" class="nav-item nav-link">Sign Up</a>
                     </div>
                 </div>
             </nav>
@@ -68,7 +85,7 @@
             <input type="password" class="form-control text-center" id="exampleInputPassword1" required>
           </div>
           <div class="text-center">
-            <button type="submit" class="btn btn-primary text-center" href="confirmationl.html">Sign in</button>
+            <button type="submit" class="btn btn-primary text-center"><a href="confirmationl.html" class="linky">Log In</a></button>
           </div>
           
           <small id="emailHelp" class="form-text text-muted text-center">Need an account? <a href="signup.html" class="linky">Create one here.</a></small>
